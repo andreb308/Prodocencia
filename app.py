@@ -26,7 +26,8 @@ print("Iniciando o servidor Flask na porta http://10.0.0.106:8081 ")
 # Criando aplicação
 app = Flask(__name__)
 app.config['APPLICATION_ROOT'] = '/projeto2'  # Define o APPLICATION_ROOT
-CORS(app, resources={r"/projeto2/*": {"origins": ["https://flask-julya.vercel.app/","http://cloudhub.iprj.uerj.br", "https://cloudhub.iprj.uerj.br"]}})
+CORS(app, resources={r"/projeto2/*": {"origins": ["https://flask-julya.vercel.app", "http://cloudhub.iprj.uerj.br", "https://cloudhub.iprj.uerj.br"]}})
+
 
 
 # Rota Default
